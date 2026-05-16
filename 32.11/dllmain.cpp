@@ -33,8 +33,8 @@ void ClientThread()
 
 void Main(HMODULE hModule)
 {
-    //UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"Fort.MME.TacticalSprint 0", nullptr);
-    //UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"Fort.MME.Clambering 0", nullptr);
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"Fort.MME.TacticalSprint 0", nullptr);
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"Fort.MME.Clambering 0", nullptr);
     UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"net.AllowEncryption 0", nullptr);
 
   /*  GetEngine()->GameViewport->ViewportConsole = (UConsole*)UGameplayStatics::SpawnObject(GetEngine()->ConsoleClass, GetEngine()->GameViewport);
@@ -123,8 +123,8 @@ void Main(HMODULE hModule)
 
     ////GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
     ////
-    //UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"open Apollo_Terrain_Retro", nullptr);
-    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"open BlastBerry_Terrain", nullptr);
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"open Apollo_Terrain_Retro", nullptr);
+    //UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"open BlastBerry_Terrain", nullptr);
     //UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), L"open PunchBerry_Terrain", nullptr);
 
     //APlayerController* LocalPlayer = GetWorld()->OwningGameInstance->LocalPlayers[0]->PlayerController;
